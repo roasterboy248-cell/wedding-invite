@@ -41,7 +41,7 @@ entryGate.addEventListener('click', () => {
 // Countdown Timer
 function updateCountdown() {
     // Set your wedding date here (Format: "Month Day, Year Hour:Minute:Second")
-    const weddingDate = new Date("April 28, 2026 00:00:00").getTime();
+    const weddingDate = new Date("December 15, 2024 18:00:00").getTime();
     
     const now = new Date().getTime();
     const distance = weddingDate - now;
