@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation - A Sacred Union</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Audio Control -->
+    <div class="audio-control">
+        <button id="audio-btn" class="audio-btn" title="Toggle Music">
+            <i class="fas fa-volume-mute"></i>
+        </button>
+        <audio id="bg-music" loop>
+            <source src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Entry Gate (Tap to Reveal) -->
+    <section id="entry-gate" class="entry-gate">
+        <div class="entry-content">
+            <div class="entry-card">
+                <div class="seal-design">
+                    <svg viewBox="0 0 200 200" class="seal-svg">
+                        <circle cx="100" cy="100" r="95" fill="none" stroke="#d4af37" stroke-width="2"/>
+                        <circle cx="100" cy="100" r="85" fill="none" stroke="#d4af37" stroke-width="1"/>
+                        <text x="100" y="110" font-family="Cormorant Garamond" font-size="48" fill="#d4af37" text-anchor="middle" font-weight="bold">A&A</text>
+                    </svg>
+                </div>
+                <p class="tap-text">Tap To Reveal</p>
+                <p class="family-text">The Gupta and Mishra families<br>invite you to celebrate the auspicious</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content (Hidden until tap) -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Header Section -->
+        <section class="header-section">
+            <div class="header-content">
+                <p class="sanskrit-text">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा</p>
+                <p class="blessing-text">With the blessings of the Almighty & our respected elders,<br>we joyfully request your gracious presence on the wedding celebration of</p>
+                
+                <div class="couple-names">
+                    <h1 class="groom-name">Dr. Ashish</h1>
+                    <p class="name-detail">Son of Dr. Shri Bhagwan Gupta & Dr. Asha Gupta<br><span class="grandparent">(Grandson of Late Shri Om Prakash Gupta & Late Smt. Omwati Gupta)</span></p>
+                    
+                    <div class="divider-ornament">
+                        <span>❖</span>
+                    </div>
+                    
+                    <h1 class="bride-name">Dr. Ayushi</h1>
+                    <p class="name-detail">Daughter of Mr. Mukesh Mishra & Mrs. Purnima Mishra<br><span class="grandparent">(Granddaughter of Late Shri Rajendra Prasad Mishra & Smt. Shakuntala Mishra)</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Big Day Section -->
+        <section class="big-day-section">
+            <div class="section-content">
+                <h2 class="section-title">The Big Day</h2>
+                <p class="section-subtitle">The start of a beautiful journey, shared with the ones we love most</p>
+                
+                <div class="wedding-date">
+                    <p class="date-text">Tuesday · 28th April 2026</p>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Mins</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Secs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="section-content">
+                <h2 class="section-title">A Glimpse of Us</h2>
+                <p class="section-subtitle">Our Beautiful Moments</p>
+                <p class="gallery-desc">A moment captured in time, forever in our hearts</p>
+                
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=300&fit=crop" alt="Couple Photo 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=300&fit=crop" alt="Couple Photo 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&h=300&fit=crop" alt="Couple Photo 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue Section -->
+        <section class="venue-section">
+            <div class="section-content">
+                <h2 class="section-title">Where Love Awaits</h2>
+                <p class="section-subtitle">Our Cherished Venue</p>
+                
+                <div class="venue-card">
+                    <h3 class="venue-name">Tivoli Lotus Court</h3>
+                    <p class="venue-address">Sector 117 Main Rd, near Capetown Society Road,<br>Sector 74, Noida, Uttar Pradesh</p>
+                    <a href="https://maps.google.com" target="_blank" class="venue-link">Get Directions →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ceremonies Section -->
+        <section class="ceremonies-section">
+            <div class="section-content">
+                <h2 class="section-title">The Celebration Unfolds</h2>
+                <p class="section-subtitle">Five Sacred Ceremonies</p>
+                
+                <div class="ceremonies-grid">
+                    <div class="ceremony-card">
+                        <div class="ceremony-number">I</div>
+                        <h3>Shagun & Shades</h3>
+                    </div>
+                    <div class="ceremony-card">
+                        <div class="ceremony-number">II</div>
+                        <h3>Parampara & Pratishtha</h3>
+                    </div>
+                    <div class="ceremony-card">
+                        <div class="ceremony-number">III</div>
+                        <h3>Sitaron Wali Shaam</h3>
+                        <p class="ceremony-subtitle">A Bollywood Musical Night</p>
+                    </div>
+                    <div class="ceremony-card">
+                        <div class="ceremony-number">IV</div>
+                        <h3>Phoolon Ki Mehfil</h3>
+                    </div>
+                    <div class="ceremony-card">
+                        <div class="ceremony-number">V</div>
+                        <h3>Together Forever</h3>
+                        <p class="ceremony-subtitle">Shubh Vivah</p>
+                    </div>
+                    <div class="ceremony-card">
+                        <div class="ceremony-number">VI</div>
+                        <h3>Bheegi Palkein</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="rsvp-section">
+            <div class="section-content">
+                <h2 class="section-title">Join the Celebration</h2>
+                <p class="section-subtitle">Celebrate With Us</p>
+                <p class="rsvp-desc">A few fun questions before the big day!</p>
+                
+                <form class="rsvp-form" id="rsvp-form">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="attending">Will you be attending? *</label>
+                        <select id="attending" name="attending" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes, I will be attending</option>
+                            <option value="no">No, I cannot attend</option>
+                            <option value="maybe">Maybe, I'm not sure yet</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guests">Number of Guests *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select number</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dietary">Dietary Restrictions</label>
+                        <textarea id="dietary" name="dietary" placeholder="Let us know if you have any dietary requirements"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit RSVP</button>
+                </form>
+                
+                <div id="success-message" class="success-message hidden">
+                    <p>✓ Thank you! We've received your RSVP.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">Dr. Ashish & Dr. Ayushi</p>
+            <p class="footer-date">28th April 2026 • Noida, Uttar Pradesh</p>
+            <p class="footer-blessing">शुभ विवाह 🎉</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
