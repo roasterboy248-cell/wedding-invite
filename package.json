@@ -1,0 +1,11 @@
+{
+  "name": "wedding-invitation-admin-system",
+  "version": "1.0.0",
+  "description": "Admin dashboard for managing unlimited wedding invitation clients",
+  "main": "admin.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": ["wedding", "invitation", "admin", "dashboard"],
+  "license": "MIT"
+}
